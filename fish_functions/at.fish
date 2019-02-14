@@ -1,3 +1,3 @@
 function at
-    youtube-dl -i -f bestaudio $argv
+    youtube-dl -i -f bestaudio --add-metadata $argv
 end
