@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-scale '/usr/share/backgrounds/3840x2160-px-forest-landscape-photography-1299737.jpg' 
