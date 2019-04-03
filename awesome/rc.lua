@@ -299,7 +299,11 @@ globalkeys = gears.table.join(
         {description = "go back", group = "client"}),
     -- Custom bindings
     awful.key({ modkey,           }, "#26", function () awful.spawn("firefox --private-window") end,
-              {description = "'e': run web browser", group = "launcher"}),
+              {description = "'e': run web browser in private mode", group = "launcher"}),
+    awful.key({ modkey,           }, "#25", function () awful.spawn("firefox") end,
+              {description = "'w': run web browser", group = "launcher"}),
+    awful.key({ modkey,           }, "#28", function () awful.spawn("telegram-desktop") end,
+              {description = "'t': run telegram", group = "launcher"}),
     awful.key({ "",           }, "#107", function () awful.spawn("xfce4-screenshooter") end, -- Print screen key
               {description = "run web browser", group = "launcher"}),
     -- Standard program
