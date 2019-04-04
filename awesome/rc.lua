@@ -298,6 +298,8 @@ globalkeys = gears.table.join(
         end,
         {description = "go back", group = "client"}),
     -- Custom bindings
+    awful.key({ modkey,           }, "Delete", function () awful.spawn("slimlock") end,
+              {description = "Lock screen", group = "launcher"}),
     awful.key({ modkey,           }, "#26", function () awful.spawn("firefox --private-window") end,
               {description = "'e': run web browser in private mode", group = "launcher"}),
     awful.key({ modkey,           }, "#25", function () awful.spawn("firefox") end,
@@ -507,7 +509,8 @@ awful.rules.rules = {
           "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
           "Wpa_gui",
           "veromix",
-          "xtightvncviewer"},
+          "xtightvncviewer",
+          "KeePassX" },
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
         -- and the name shown there might not match defined rules here.
