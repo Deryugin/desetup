@@ -8,5 +8,6 @@ function ecl
 	end
 
 	set conf "confload-"(make confload | head -n -3 | sed 1,1d | grep $filter | dmenu -l 40 | tr -d ' ')
+	echo $conf
 	make $conf
 end
