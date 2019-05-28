@@ -2,4 +2,4 @@
 
 mkdir ~/.config/awesome -p
 
-cp awesome/* ~/.config/awesome
+cp -r awesome/* ~/.config/awesome

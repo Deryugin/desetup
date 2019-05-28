@@ -10,3 +10,4 @@ function run {
 run pulseaudio -D&
 run compton &
 run /home/dde/.fehbg &
+export
