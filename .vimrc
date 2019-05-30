@@ -330,5 +330,23 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 "
+"
 
+function! s:insert_gates()
+	let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")
+	execute "normal! i#ifndef " . gatename
+	execute "normal! o#define " . gatename . " "
+	execute "normal! Go#endif /* " . gatename . " */"
+	normal! kk
+endfunction
+
+set shell=/usr/bin/fish
+
+"nnoremap <c-j> <c-w>j
+"nnoremap <c-k> <c-w>k
+"nnoremap <c-h> <c-w>h
+"nnoremap <c-l> <c-w>l
 set scrolloff=5
+colorscheme torte
+
+set incsearch
