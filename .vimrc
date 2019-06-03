@@ -334,3 +334,5 @@ nnoremap <C-L> :nohl<CR><C-L>
 set scrolloff=5
 
 colorscheme orbital
+
+set incsearch
