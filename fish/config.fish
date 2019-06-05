@@ -1,1 +1,1 @@
-set TERM xterm-color # For correct termite/tmux/vim interaction
+set TERM xterm-256color # For correct termite/tmux/vim interaction
