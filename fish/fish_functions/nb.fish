@@ -1,3 +1,3 @@
-function nr
+function nb
 	newsboat -r
 end
