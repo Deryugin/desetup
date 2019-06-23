@@ -1,4 +1,4 @@
-autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre *.c,*.h,*.py,*.cpp,*.hpp %s/\s\+$//e
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 " Description: A minimal, but feature rich, example .vimrc. If you are a
@@ -110,7 +110,7 @@ set visualbell
 set t_vb=
 
 " Enable use of the mouse for all modes
-set mouse=a
+" set mouse=a
 
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
@@ -336,3 +336,7 @@ set scrolloff=5
 colorscheme orbital
 
 set incsearch
+
+au BufRead,BufNewFile *.my,Mybuild,mods.config set filetype=mybuild
+
+set splitbelow splitright
