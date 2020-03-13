@@ -340,3 +340,5 @@ set incsearch
 au BufRead,BufNewFile *.my,Mybuild,mods.config set filetype=mybuild
 
 set splitbelow splitright
+
+set tabpagemax=999
