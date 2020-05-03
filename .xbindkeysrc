@@ -81,18 +81,18 @@
     m:0x40 + c:28
     Mod4 + t
 
-#"/opt/kbdswitch.sh"
-#    m:0x40 + c:50
-#    Alt + Shift_L
-#
-#"/opt/kbdswitch.sh"
-#    m:0x9 + c:50
-#    Shift+Alt + Shift_L
-#    
-#"/opt/kbdswitch.sh"
-#    m:0x9 + c:64
-#    Shift+Alt + Alt_L
-
-"/opt/kbdswitch.sh"
+"/opt/layout_switch.sh"
     m:0x2 + c:66
     Caps_Lock
+
+"setxkbmap -option caps:none"
+    m:0x0 + c:78
+    Scroll_Lock
+
+"setxkbmap -option"
+    m:0x0 + c:127
+    Pause
+
+"slimlock"
+    m:0x40 + c:119
+    Mod4 + Delete
