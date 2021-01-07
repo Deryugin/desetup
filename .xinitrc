@@ -2,6 +2,7 @@ xbindkeys
 setxkbmap -option caps:none
 
 /home/dde/src/dwm-bar/dwm_bar.sh &
+dunst&
 
 case $session in
     i3|i3wm           ) exec i3;;
