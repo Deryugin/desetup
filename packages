@@ -1,5 +1,8 @@
 #!/bin/sh
 
 pacman -Suy \
+	cppecheck \
+	exa \
+	jq \
 	notification-daemon \
 	dunst
