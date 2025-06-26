@@ -1,8 +1,16 @@
 #!/bin/sh
 
-pacman -Suy \
-	cppecheck \
+sudo pacman -Suy \
+        arandr \
+	alacritty \
+        ccache \
+	cppcheck \
+	dunst \
+        feh \
+        fish \
 	exa \
+        htop \
 	jq \
 	notification-daemon \
-	dunst
+        obs-studio \
+        stalonetray 
