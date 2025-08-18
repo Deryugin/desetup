@@ -5,12 +5,23 @@ sudo pacman -Suy \
 	alacritty \
         ccache \
 	cppcheck \
+	debugedit \
 	dunst \
+        fakeroot \
         feh \
         fish \
 	exa \
         htop \
 	jq \
+	make \
+	network-manager-applet \
 	notification-daemon \
         obs-studio \
-        stalonetray 
+        ripgrep  \
+        stalonetray  \
+        workrave \
+        xdotool 
+
+# vpn
+#     opensc \
+#     openvpn
