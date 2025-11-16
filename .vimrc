@@ -1,4 +1,6 @@
 autocmd BufWritePre *.c,*.h,*.py,*.cpp,*.hpp %s/\s\+$//e
+
+autocmd BufWritePost *.go !gofmt -w -s %:p
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 " Description: A minimal, but feature rich, example .vimrc. If you are a
